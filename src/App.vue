@@ -390,10 +390,10 @@
                     упаковки.
                   </p>
                   <div>
-                    <h3 class="font-bold mb-[16px]">
+                    <h3 class="font-bold mb-[16px] text-sm md:text-lg">
                       Популярные размеры (всегда в наличии):
                     </h3>
-                    <table class="table-fixed mb-20 w-[100%]">
+                    <table class="table-fixed mb-20 w-full">
                       <thead class="bg-[#DEDEDE]">
                         <tr>
                           <th class="py-2 pl-5 text:sm">Тип картона</th>
@@ -405,53 +405,53 @@
                         <tr>
                           <td
                             rowspan="4"
-                            class="text-sm font-bold text-[14px] w-[126px]"
+                            class="text-xs md:text-base md:pl-5 font-bold text-[14px] w-[126px]"
                           >
                             Трехслойный Гофрокартон Т-21
                           </td>
                           <td
-                            class="text-sm border-b-2 border-b-solid border-b-[#DEDEDE] py-2 px-5"
+                            class="text-xs md:text-base border-b-2 border-b-solid border-b-[#DEDEDE] py-2 md:px-5 pl-2"
                           >
                             лист 1050 х 2000 мм
                           </td>
                           <td
-                            class="text-sm border-b-2 border-b-solid border-b-[#DEDEDE] py-2 px-5"
+                            class="text-xs md:text-base border-b-2 border-b-solid border-b-[#DEDEDE] py-2 md:px-5 pl-2"
                           >
                             от 39 руб./лист
                           </td>
                         </tr>
                         <tr>
                           <td
-                            class="border-b-2 border-b-solid border-b-[#DEDEDE] py-2 px-5"
+                            class="border-b-2 border-b-solid border-b-[#DEDEDE] py-2 md:px-5 pl-2 text-xs md:text-base"
                           >
                             лист 1200 х 800 мм
                           </td>
                           <td
-                            class="border-b-2 border-b-solid border-b-[#DEDEDE] py-2 px-5"
+                            class="border-b-2 border-b-solid border-b-[#DEDEDE] py-2 md:px-5 pl-2 text-xs md:text-base"
                           >
                             от 18 руб./лист
                           </td>
                         </tr>
                         <tr>
                           <td
-                            class="border-b-2 border-b-solid border-b-[#DEDEDE] py-2 px-5"
+                            class="border-b-2 border-b-solid border-b-[#DEDEDE] py-2 md:px-5 pl-2 text-xs md:text-base"
                           >
                             лист 1050 х 2500 мм
                           </td>
                           <td
-                            class="border-b-2 border-b-solid border-b-[#DEDEDE] py-2 px-5"
+                            class="border-b-2 border-b-solid border-b-[#DEDEDE] py-2 md:px-5 pl-2 text-xs md:text-base"
                           >
                             от 47 руб./лист
                           </td>
                         </tr>
                         <tr>
                           <td
-                            class="border-b-2 border-b-solid border-b-[#DEDEDE] py-2 px-5"
+                            class="border-b-2 border-b-solid border-b-[#DEDEDE] py-2 md:px-5 pl-2 text-xs md:text-base"
                           >
                             лист 1200 х 1000 мм
                           </td>
                           <td
-                            class="border-b-2 border-b-solid border-b-[#DEDEDE] py-2 px-5"
+                            class="border-b-2 border-b-solid border-b-[#DEDEDE] py-2 md:px-5 pl-2 text-xs md:text-base"
                           >
                             от 25 руб./лист
                           </td>
