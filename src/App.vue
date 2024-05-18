@@ -73,31 +73,57 @@
             </form>
             <ul class="md:flex gap-[50px]">
               <li
-                class="py-6 border-b-2 border-solid border-[#DD9C50] md:border-none"
+                class="py-3 border-b-2 border-solid border-[#DD9C50] md:border-none"
               >
                 <a href="#" class="text-xl font-bold">Продукция</a>
               </li>
               <li
-                class="py-6 border-b-2 border-solid border-[#DD9C50] md:border-none"
+                class="py-3 border-b-2 border-solid border-[#DD9C50] md:border-none"
               >
                 <a href="#" class="text-xl font-bold">Наше производство</a>
               </li>
               <li
-                class="py-6 border-b-2 border-solid border-[#DD9C50] md:border-none"
+                class="py-3 border-b-2 border-solid border-[#DD9C50] md:border-none"
               >
                 <a href="#" class="text-xl font-bold">Услуги</a>
               </li>
               <li
-                class="py-6 border-b-2 border-solid border-[#DD9C50] md:border-none"
+                class="py-3 border-b-2 border-solid border-[#DD9C50] md:border-none"
               >
                 <a href="#" class="text-xl font-bold">доставка</a>
               </li>
               <li
-                class="py-6 border-b-2 border-solid border-[#DD9C50] md:border-none"
+                class="py-3 border-b-2 border-solid border-[#DD9C50] md:border-none"
               >
                 <a href="#" class="text-xl font-bold">контакты</a>
               </li>
             </ul>
+          </div>
+        </div>
+        <div class="md:hidden px-5 text-center w-[300px] ml-10">
+          <div class="address flex gap-4 mb-5">
+            <img src="./assets/icons/map.svg" alt="" />
+            <p class="text-sm w-[256px]">
+              Московская область, Раменский р-н, Бронницы, C. Михеево
+            </p>
+          </div>
+          <div class="phone flex-col-reverse">
+            <p class="font-semibold text-2xl mb-5">+7 (495) 545-47-88</p>
+            <div class="justify-center flex gap-x-2.5 mb-5">
+              <img src="./assets/icons/clock.svg" alt="" />
+              <p class="text-sm font-normal uppercase">Пн-пт: 9:00 – 18:00</p>
+            </div>
+          </div>
+          <div class="zakazat">
+            <button
+              class="mb-5 text-sm border-solid border-2 border-white py-2.5 px-4"
+            >
+              Заказать обратный звонок
+            </button>
+            <div class="flex gap-x-2.5 justify-center">
+              <img src="./assets/icons/mail.svg" alt="" />
+              <p class="text-sm">zakaz@kartonika.ru</p>
+            </div>
           </div>
         </div>
       </section>
