@@ -8,7 +8,8 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(./assets/fonts/Open_Sans/static/OpenSans-Regular.ttf) format("woff2");
+    src: url(./assets/fonts/Open_Sans/static/OpenSans-Regular.ttf)
+      format("woff2");
   }
   @font-face {
     font-family: "OpenSansBold";
@@ -18,17 +19,7 @@
     src: url(./assets/fonts/Open_Sans/static/OpenSans-Bold.ttf) format("woff2");
   }
 }
-/* --------------------------  Carousel ------------------------------------------ */
-.embla {
-  overflow: hidden;
-}
-.embla__container {
-  display: flex;
-}
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
-}
+
 /* ---------------------------------------------------------------------- */
 
 @-webkit-keyframes scroll {
@@ -85,6 +76,6 @@
   height: 100px;
   width: 250px;
 }
-button{
+button {
   cursor: pointer;
 }
