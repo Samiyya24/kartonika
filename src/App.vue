@@ -53,7 +53,7 @@
       </div>
       <section
         style="transition: 0.5s"
-        class="header_bottom bg-[#CB883A] text-white md:block max-md:fixed w-full max-md:h-[100vh] max-md:top-128 -left-full max-md:z-50"
+        class="header_bottom bg-[#CB883A] text-white md:block max-md:absolute w-full max-md:h-[100vh] max-md:top-128 -left-full max-md:z-50"
         :class="show ? 'active' : ''"
       >
         <div class="container md:w-[1318px] px-10 mx-auto">
