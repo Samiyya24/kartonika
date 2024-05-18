@@ -1,17 +1,19 @@
 <template>
   <div>
     <header>
-      <div class="container md:w-[1318px] w-[340px] px-10 mx-auto">
+      <div class="container md:w-[1318px] w-[400px] px-10 mx-auto">
         <div
           class="header_section flex items-center justify-between py-[30px] -ml-5"
         >
           <div class="header_logo flex items-center gap-[25px]">
-            <div class="-ml-10 flex md:justify-center gap-20 md:p-6">
-              <img
+            <div class="flex md:justify-center gap-16 md:p-6">
+              <button
+                id="bar"
+                @click="toogle"
                 class="hidden max-sm:block max-md:block"
-                src="./assets/icons/burger.svg"
-                alt=""
-              />
+              >
+                <img src="./assets/icons/burger.svg" alt="" />
+              </button>
               <img src="./assets/icons/logo.svg" alt="" />
               <img
                 class="hidden max-sm:block max-md:block"
@@ -49,10 +51,14 @@
           </div>
         </div>
       </div>
-      <section class="header_bottom bg-[#CB883A] text-white hidden md:block">
+      <section
+        style="transition: 0.5s"
+        class="header_bottom bg-[#CB883A] text-white md:block max-md:fixed w-full max-md:h-[100vh] max-md:top-128 -left-full max-md:z-50"
+        :class="show ? 'active' : ''"
+      >
         <div class="container md:w-[1318px] px-10 mx-auto">
           <div
-            class="md:flex-row-reverse header_bottom_section md:flex md:justify-between -ml-5 md:ml-5 items-start py-[18px] md:items-center"
+            class="md:flex-row-reverse md:flex md:justify-between -ml-5 md:ml-5 items-start py-[18px] md:items-center"
           >
             <form action="" class="relative">
               <input
@@ -67,31 +73,29 @@
             </form>
             <ul class="md:flex gap-[50px]">
               <li
-                class="py-6 border-b-2 border-solid border-b-red-500 md:border-none"
+                class="py-6 border-b-2 border-solid border-[#DD9C50] md:border-none"
               >
-                <a href="#" class="md:text-xl text-sm font-bold">Продукция</a>
+                <a href="#" class="text-xl font-bold">Продукция</a>
               </li>
               <li
-                class="py-6 border-b-2 border-solid border-b-red-500 md:border-none"
+                class="py-6 border-b-2 border-solid border-[#DD9C50] md:border-none"
               >
-                <a href="#" class="md:text-xl text-sm font-bold"
-                  >Наше производство</a
-                >
+                <a href="#" class="text-xl font-bold">Наше производство</a>
               </li>
               <li
-                class="py-6 border-b-2 border-solid border-b-red-500 md:border-none"
+                class="py-6 border-b-2 border-solid border-[#DD9C50] md:border-none"
               >
-                <a href="#" class="md:text-xl text-sm font-bold">Услуги</a>
+                <a href="#" class="text-xl font-bold">Услуги</a>
               </li>
               <li
-                class="py-6 border-b-2 border-solid border-b-red-500 md:border-none"
+                class="py-6 border-b-2 border-solid border-[#DD9C50] md:border-none"
               >
-                <a href="#" class="md:text-xl text-sm font-bold">доставка</a>
+                <a href="#" class="text-xl font-bold">доставка</a>
               </li>
               <li
-                class="py-6 border-b-2 border-solid border-b-red-500 md:border-none"
+                class="py-6 border-b-2 border-solid border-[#DD9C50] md:border-none"
               >
-                <a href="#" class="md:text-xl text-sm font-bold">контакты</a>
+                <a href="#" class="text-xl font-bold">контакты</a>
               </li>
             </ul>
           </div>
@@ -986,17 +990,21 @@
 Введите текст сообщения</textarea
                 >
                 <div class="md:flex items-center md:justify-between">
-                  <form
-                    class="my-7 flex justify-center items-center gap-5"
-                  >
+                  <form class="my-7 flex justify-center items-center gap-5">
                     <img src="../src/assets/icons/Vector.svg" alt="" />
-                    <button onclick="focusInput()">Прикрепить файл</button>
-                    <input
-                      class="hidden"
-                      placeholder="Прикрепить файл"
-                      type="file"
-                      id="input"
-                    />
+                    <form action="">
+                      <input
+                        class="hidden"
+                        placeholder="Прикрепить файл"
+                        type="file"
+                        name=""
+                        id="input"
+                      />
+
+                      <button type="button" @click="changeInput">
+                        Прикрепить файл
+                      </button>
+                    </form>
                   </form>
                   <button
                     class="mb-2.5 text-lg font-medium border-2 border-solid border-[#CB883A] hover:text-white hover:bg-[#CB883A] py-2 md:px-12 px-[130px]"
@@ -1077,6 +1085,22 @@
   </div>
 </template>
 
-<script>
-      
+<script setup>
+import { onMounted, ref } from "vue";
+
+let input;
+const show = ref(true);
+
+const toogle = () => {
+  show.value = !show.value;
+  console.log(show.value);
+};
+
+onMounted(() => {
+  input = document.getElementById("input");
+});
+
+const changeInput = () => {
+  input.click();
+};
 </script>
