@@ -54,7 +54,7 @@
       <section
         style="transition: 0.5s"
         class="header_bottom bg-[#CB883A] text-white md:block max-md:absolute w-full max-md:h-[100vh] max-md:top-128 -left-full max-md:z-50"
-        :class="show ? 'active' : ''"
+        :class="!show ? 'active' : ''"
       >
         <div class="container md:w-[1318px] px-10 mx-auto">
           <div
@@ -63,10 +63,10 @@
             <form action="" class="relative">
               <input
                 type="text"
-                class="rounded-full p-8 py-2 w-full md:w-[250px] outline-none text-black"
+                class="rounded-full pl-5 pr-12 py-2 w-full md:w-[250px] outline-none text-black"
               />
               <img
-                class="absolute top-1.5 right-2.5"
+                class="absolute top-2 right-5"
                 src="./assets/icons/search.svg"
                 alt=""
               />
