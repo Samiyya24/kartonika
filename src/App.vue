@@ -53,7 +53,7 @@
       </div>
       <section
         style="transition: 0.5s"
-        class="header_bottom bg-[#CB883A] text-white md:block max-md:absolute w-full max-md:h-[100vh] max-md:top-128 -left-full max-md:z-50"
+        class="header_bottom bg-[#CB883A] text-white md:block max-md:absolute w-full max-md:h-[730px] max-md:top-128 -left-full max-md:z-50"
         :class="!show ? 'active' : ''"
       >
         <div class="container md:w-[1318px] px-10 mx-auto">
@@ -71,7 +71,7 @@
                 alt=""
               />
             </form>
-            <ul class="md:flex gap-[50px]">
+            <ul class="md:flex gap-[50px] max-md:mb-10">
               <li
                 class="py-3 border-b-2 border-solid border-[#DD9C50] md:border-none"
               >
